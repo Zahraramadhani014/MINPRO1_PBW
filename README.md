@@ -100,15 +100,15 @@
 
 <img width="610" height="844" alt="image" src="https://github.com/user-attachments/assets/cbc5e45a-b8f4-473c-99c5-4c3e05c9617e" />
 
->Pada bagian Home (Hero Section), struktur utama dibuat menggunakan elemen <section> dengan id home agar dapat diakses melalui navigasi navbar. Di dalamnya digunakan container dan row dari Bootstrap untuk membagi layout menjadi dua kolom, yaitu bagian kiri untuk teks dan bagian kanan untuk foto profil.
->
->Bagian teks berisi heading, role, deskripsi, badge, tombol navigasi, serta informasi statistik. Deskripsi pada section ini menggunakan data binding dari Vue JS, sehingga teks diambil dari bagian data() pada script dan tidak ditulis secara statis di HTML. Hal ini menunjukkan penggunaan framework Vue untuk membuat tampilan lebih dinamis.
->
->Untuk pengaturan tata letak digunakan sistem grid dan utility class dari Bootstrap seperti flexbox dan spacing agar elemen tersusun rapi dan responsif di berbagai ukuran layar.
->
->Pada bagian foto profil ditambahkan atribut animasi dari library AOS sehingga gambar muncul dengan efek transisi ketika halaman dimuat. Styling tambahan seperti warna, gradient, shadow, dan hover effect diatur melalui file CSS terpisah (style.css).
->
->Secara keseluruhan, section ini menggabungkan HTML untuk struktur, CSS untuk tampilan, Bootstrap untuk layout responsif, Vue JS untuk data binding, serta AOS untuk animasi.
+Pada bagian Home (Hero Section), struktur utama dibuat menggunakan elemen <section> dengan id home agar dapat diakses melalui navigasi navbar. Di dalamnya digunakan container dan row dari Bootstrap untuk membagi layout menjadi dua kolom, yaitu bagian kiri untuk teks dan bagian kanan untuk foto profil.
+
+Bagian teks berisi heading, role, deskripsi, badge, tombol navigasi, serta informasi statistik. Deskripsi pada section ini menggunakan data binding dari Vue JS, sehingga teks diambil dari bagian data() pada script dan tidak ditulis secara statis di HTML. Hal ini menunjukkan penggunaan framework Vue untuk membuat tampilan lebih dinamis.
+
+Untuk pengaturan tata letak digunakan sistem grid dan utility class dari Bootstrap seperti flexbox dan spacing agar elemen tersusun rapi dan responsif di berbagai ukuran layar.
+
+Pada bagian foto profil ditambahkan atribut animasi dari library AOS sehingga gambar muncul dengan efek transisi ketika halaman dimuat. Styling tambahan seperti warna, gradient, shadow, dan hover effect diatur melalui file CSS terpisah (style.css).
+
+Secara keseluruhan, section ini menggabungkan HTML untuk struktur, CSS untuk tampilan, Bootstrap untuk layout responsif, Vue JS untuk data binding, serta AOS untuk animasi.
 
 ## Code Section About Me
 
@@ -116,77 +116,77 @@
 
 <img width="801" height="931" alt="image" src="https://github.com/user-attachments/assets/5693a194-a487-451e-a755-fa079e1eb77c" />
 
->Pada section About Me, struktur utama dibuat menggunakan elemen <section> dengan id about agar dapat terhubung langsung dengan navigasi pada navbar maupun tombol di Hero Section. Di dalamnya digunakan container untuk menjaga lebar konten tetap rapi, serta sistem grid Bootstrap untuk mengatur pembagian layout.
->
->Bagian ini dibagi menjadi dua kolom utama. Kolom pertama berisi profil atau deskripsi diri, sedangkan kolom kedua menampilkan daftar skills. Penggunaan class grid seperti col-lg-6 memungkinkan tampilan menjadi dua kolom pada layar besar, namun otomatis menyesuaikan menjadi satu kolom pada layar kecil sehingga tetap responsif.
->
->Pada bagian profil, digunakan elemen heading dan paragraf untuk menyusun informasi secara terstruktur. Beberapa kata diberi penekanan menggunakan elemen <strong> agar terlihat lebih menonjol. Styling teks, warna, dan jarak antar elemen diatur melalui kombinasi class Bootstrap dan CSS custom pada file style.css.
->
->Bagian Skills menggunakan struktur progress bar dari Bootstrap untuk menampilkan tingkat kemampuan secara visual. Setiap skill ditampilkan dengan nama dan persentase, lalu progress bar menyesuaikan lebarnya berdasarkan nilai tersebut. Class flex digunakan untuk mengatur posisi teks nama skill dan persentase agar sejajar kiri dan kanan.
->
->Masih dalam section yang sama, terdapat bagian Experience yang ditampilkan menggunakan struktur timeline. Data pengalaman tidak ditulis secara statis satu per satu, melainkan menggunakan perulangan v-for dari Vue JS. Dengan cara ini, data pengalaman diambil langsung dari array pada bagian data() di script, sehingga jika ada penambahan atau perubahan data, tampilan akan otomatis ikut berubah.
->
->Struktur timeline terdiri dari container utama, elemen titik (timeline-dot), serta konten pengalaman yang berisi judul, tahun, dan deskripsi. Styling seperti garis vertikal, efek hover, dan transisi diatur melalui CSS custom agar tampilan lebih menarik dan tidak monoton.
->
->Secara keseluruhan, section About Me ini menggabungkan HTML untuk struktur konten, Bootstrap untuk layout responsif dan komponen visual seperti progress bar, Vue JS untuk menampilkan data pengalaman secara dinamis, serta CSS custom untuk memperkuat tampilan dan efek visual.
+Pada section About Me, struktur utama dibuat menggunakan elemen <section> dengan id about agar dapat terhubung langsung dengan navigasi pada navbar maupun tombol di Hero Section. Di dalamnya digunakan container untuk menjaga lebar konten tetap rapi, serta sistem grid Bootstrap untuk mengatur pembagian layout.
+
+Bagian ini dibagi menjadi dua kolom utama. Kolom pertama berisi profil atau deskripsi diri, sedangkan kolom kedua menampilkan daftar skills. Penggunaan class grid seperti col-lg-6 memungkinkan tampilan menjadi dua kolom pada layar besar, namun otomatis menyesuaikan menjadi satu kolom pada layar kecil sehingga tetap responsif.
+
+Pada bagian profil, digunakan elemen heading dan paragraf untuk menyusun informasi secara terstruktur. Beberapa kata diberi penekanan menggunakan elemen <strong> agar terlihat lebih menonjol. Styling teks, warna, dan jarak antar elemen diatur melalui kombinasi class Bootstrap dan CSS custom pada file style.css.
+
+Bagian Skills menggunakan struktur progress bar dari Bootstrap untuk menampilkan tingkat kemampuan secara visual. Setiap skill ditampilkan dengan nama dan persentase, lalu progress bar menyesuaikan lebarnya berdasarkan nilai tersebut. Class flex digunakan untuk mengatur posisi teks nama skill dan persentase agar sejajar kiri dan kanan.
+
+Masih dalam section yang sama, terdapat bagian Experience yang ditampilkan menggunakan struktur timeline. Data pengalaman tidak ditulis secara statis satu per satu, melainkan menggunakan perulangan v-for dari Vue JS. Dengan cara ini, data pengalaman diambil langsung dari array pada bagian data() di script, sehingga jika ada penambahan atau perubahan data, tampilan akan otomatis ikut berubah.
+
+Struktur timeline terdiri dari container utama, elemen titik (timeline-dot), serta konten pengalaman yang berisi judul, tahun, dan deskripsi. Styling seperti garis vertikal, efek hover, dan transisi diatur melalui CSS custom agar tampilan lebih menarik dan tidak monoton.
+
+Secara keseluruhan, section About Me ini menggabungkan HTML untuk struktur konten, Bootstrap untuk layout responsif dan komponen visual seperti progress bar, Vue JS untuk menampilkan data pengalaman secara dinamis, serta CSS custom untuk memperkuat tampilan dan efek visual.
 
 ## Code Section Certificates
 
 <img width="703" height="378" alt="image" src="https://github.com/user-attachments/assets/ad2cf9fd-f62d-4e90-baf8-c39c7aecac30" />
 
->Pada section Certificates, struktur utama dibuat menggunakan elemen <section> dengan id certificates agar dapat terhubung langsung dengan menu navigasi pada navbar. Class tambahan seperti py-5 digunakan untuk memberikan jarak atas dan bawah, sedangkan bg-soft digunakan untuk membedakan warna latar belakang agar section ini terlihat terpisah dari bagian sebelumnya.
->
->Di dalamnya digunakan container dan row dari Bootstrap untuk mengatur tata letak card sertifikat. Sistem grid seperti col-lg-4 dan col-md-6 membuat jumlah card yang tampil dalam satu baris menyesuaikan ukuran layar. Pada layar besar akan tampil tiga card dalam satu baris, di layar sedang dua card, dan di layar kecil satu card per baris. Hal ini membuat tampilan tetap responsif tanpa perlu menulis media query tambahan.
->
->Data sertifikat tidak ditulis satu per satu secara statis, tetapi menggunakan perulangan v-for dari Vue JS. Dengan cara ini, setiap item dalam array certificates akan otomatis ditampilkan sebagai card. Jika ada penambahan data pada array tersebut, maka tampilan akan langsung ikut berubah tanpa perlu menambah struktur HTML baru.
->
->Setiap sertifikat dibungkus dalam komponen card yang berisi gambar dan judul kegiatan. Gambar sertifikat ditampilkan menggunakan binding :src dari Vue, sehingga sumber gambar diambil langsung dari data yang ada di script. Hal ini menunjukkan penggunaan data binding untuk menghubungkan data dan tampilan.
->
->Pada bagian card juga ditambahkan event @click yang terhubung dengan method openLightbox(). Fungsi ini digunakan untuk menampilkan gambar sertifikat dalam ukuran lebih besar melalui fitur lightbox. Dengan cara ini, pengguna bisa melihat detail sertifikat tanpa meninggalkan halaman utama.
->
->Selain itu, ditambahkan atribut animasi dari AOS seperti data-aos="zoom-in" agar setiap card muncul dengan efek transisi saat discroll. Styling tambahan seperti shadow, hover effect, dan overlay diatur melalui file CSS terpisah (style.css) untuk memperkuat tampilan visual.
->
->Secara keseluruhan, section Certificates ini menggabungkan HTML untuk struktur, Bootstrap untuk layout responsif, Vue JS untuk perulangan data dan event handling, AOS untuk animasi, serta CSS custom untuk tampilan dan efek interaktif.
+Pada section Certificates, struktur utama dibuat menggunakan elemen <section> dengan id certificates agar dapat terhubung langsung dengan menu navigasi pada navbar. Class tambahan seperti py-5 digunakan untuk memberikan jarak atas dan bawah, sedangkan bg-soft digunakan untuk membedakan warna latar belakang agar section ini terlihat terpisah dari bagian sebelumnya.
+
+Di dalamnya digunakan container dan row dari Bootstrap untuk mengatur tata letak card sertifikat. Sistem grid seperti col-lg-4 dan col-md-6 membuat jumlah card yang tampil dalam satu baris menyesuaikan ukuran layar. Pada layar besar akan tampil tiga card dalam satu baris, di layar sedang dua card, dan di layar kecil satu card per baris. Hal ini membuat tampilan tetap responsif tanpa perlu menulis media query tambahan.
+
+Data sertifikat tidak ditulis satu per satu secara statis, tetapi menggunakan perulangan v-for dari Vue JS. Dengan cara ini, setiap item dalam array certificates akan otomatis ditampilkan sebagai card. Jika ada penambahan data pada array tersebut, maka tampilan akan langsung ikut berubah tanpa perlu menambah struktur HTML baru.
+
+Setiap sertifikat dibungkus dalam komponen card yang berisi gambar dan judul kegiatan. Gambar sertifikat ditampilkan menggunakan binding :src dari Vue, sehingga sumber gambar diambil langsung dari data yang ada di script. Hal ini menunjukkan penggunaan data binding untuk menghubungkan data dan tampilan.
+
+Pada bagian card juga ditambahkan event @click yang terhubung dengan method openLightbox(). Fungsi ini digunakan untuk menampilkan gambar sertifikat dalam ukuran lebih besar melalui fitur lightbox. Dengan cara ini, pengguna bisa melihat detail sertifikat tanpa meninggalkan halaman utama.
+
+Selain itu, ditambahkan atribut animasi dari AOS seperti data-aos="zoom-in" agar setiap card muncul dengan efek transisi saat discroll. Styling tambahan seperti shadow, hover effect, dan overlay diatur melalui file CSS terpisah (style.css) untuk memperkuat tampilan visual.
+
+Secara keseluruhan, section Certificates ini menggabungkan HTML untuk struktur, Bootstrap untuk layout responsif, Vue JS untuk perulangan data dan event handling, AOS untuk animasi, serta CSS custom untuk tampilan dan efek interaktif.
 
 ## Code Head (Import Library & Styling)
 
 <img width="798" height="354" alt="image" src="https://github.com/user-attachments/assets/7c64bff1-5d77-4bd2-9e27-fa9bc5c51720" />
 
->Pada bagian <head>, saya menambahkan beberapa file eksternal yang digunakan untuk mendukung tampilan dan fungsionalitas website.
->
->Meta tag viewport digunakan agar tampilan website dapat menyesuaikan ukuran layar perangkat sehingga tetap responsif.
->
->Saya mengimpor Bootstrap melalui CDN untuk membantu pembuatan layout responsif dan komponen seperti navbar, grid, dan card. Selain itu, saya juga menggunakan Bootstrap Icons untuk menambahkan elemen visual berupa icon.
->
->Library AOS ditambahkan untuk memberikan efek animasi ketika elemen muncul saat halaman discroll.
->
->Untuk mempercantik tampilan teks, saya mengimpor Google Fonts seperti Poppins dan Montserrat agar typography terlihat lebih modern dan konsisten.
->
->Terakhir, saya menambahkan file CSS eksternal (style.css) yang berisi styling tambahan seperti warna tema, gradient, shadow, dan hover effect.
+Pada bagian <head>, saya menambahkan beberapa file eksternal yang digunakan untuk mendukung tampilan dan fungsionalitas website.
+
+Meta tag viewport digunakan agar tampilan website dapat menyesuaikan ukuran layar perangkat sehingga tetap responsif.
+
+Saya mengimpor Bootstrap melalui CDN untuk membantu pembuatan layout responsif dan komponen seperti navbar, grid, dan card. Selain itu, saya juga menggunakan Bootstrap Icons untuk menambahkan elemen visual berupa icon.
+
+Library AOS ditambahkan untuk memberikan efek animasi ketika elemen muncul saat halaman discroll.
+
+Untuk mempercantik tampilan teks, saya mengimpor Google Fonts seperti Poppins dan Montserrat agar typography terlihat lebih modern dan konsisten.
+
+Terakhir, saya menambahkan file CSS eksternal (style.css) yang berisi styling tambahan seperti warna tema, gradient, shadow, dan hover effect.
 
 ## Code Navbar
 
 <img width="800" height="329" alt="image" src="https://github.com/user-attachments/assets/9d6e7908-ce3e-4a64-9314-7e69db5185bc" />
 
->Pada bagian Navbar, struktur utama dibuat menggunakan elemen <nav> dengan class dari Bootstrap seperti navbar, navbar-expand-lg, dan fixed-top. Class navbar-expand-lg digunakan agar menu akan tampil horizontal pada layar besar dan berubah menjadi menu toggle (hamburger) pada layar kecil. Sedangkan fixed-top membuat navbar tetap berada di bagian atas meskipun halaman discroll.
->
->Di dalam navbar terdapat container untuk menjaga lebar konten tetap rapi. Bagian kiri berisi brand atau nama website yang ditampilkan menggunakan elemen <a> dengan class navbar-brand. Pada bagian ini juga ditambahkan icon dari Bootstrap Icons untuk memperkuat tampilan visual.
->
->Untuk tampilan responsif di perangkat kecil, digunakan tombol navbar-toggler yang berfungsi untuk membuka dan menutup menu. Fitur ini bekerja menggunakan atribut data-bs-toggle dan data-bs-target dari Bootstrap tanpa perlu menulis JavaScript tambahan.
->
->Menu navigasi ditampilkan dalam bentuk list (<ul> dan <li>) dengan class navbar-nav. Setiap item menggunakan anchor link seperti #home, #about, dan #certificates, sehingga ketika diklik halaman akan langsung scroll ke section yang sesuai tanpa reload. Styling tambahan seperti warna, background gradient, dan efek hover diatur melalui CSS custom pada file style.css.
->
->Secara keseluruhan, Navbar ini menggabungkan HTML untuk struktur, Bootstrap untuk sistem navigasi responsif, serta CSS custom untuk memperkuat tampilan visual dan tema website.
+Pada bagian Navbar, struktur utama dibuat menggunakan elemen <nav> dengan class dari Bootstrap seperti navbar, navbar-expand-lg, dan fixed-top. Class navbar-expand-lg digunakan agar menu akan tampil horizontal pada layar besar dan berubah menjadi menu toggle (hamburger) pada layar kecil. Sedangkan fixed-top membuat navbar tetap berada di bagian atas meskipun halaman discroll.
+
+Di dalam navbar terdapat container untuk menjaga lebar konten tetap rapi. Bagian kiri berisi brand atau nama website yang ditampilkan menggunakan elemen <a> dengan class navbar-brand. Pada bagian ini juga ditambahkan icon dari Bootstrap Icons untuk memperkuat tampilan visual.
+
+Untuk tampilan responsif di perangkat kecil, digunakan tombol navbar-toggler yang berfungsi untuk membuka dan menutup menu. Fitur ini bekerja menggunakan atribut data-bs-toggle dan data-bs-target dari Bootstrap tanpa perlu menulis JavaScript tambahan.
+
+Menu navigasi ditampilkan dalam bentuk list (<ul> dan <li>) dengan class navbar-nav. Setiap item menggunakan anchor link seperti #home, #about, dan #certificates, sehingga ketika diklik halaman akan langsung scroll ke section yang sesuai tanpa reload. Styling tambahan seperti warna, background gradient, dan efek hover diatur melalui CSS custom pada file style.css.
+
+Secara keseluruhan, Navbar ini menggabungkan HTML untuk struktur, Bootstrap untuk sistem navigasi responsif, serta CSS custom untuk memperkuat tampilan visual dan tema website.
 
 ## Code Footer
 
 <img width="404" height="84" alt="image" src="https://github.com/user-attachments/assets/6f958b9a-71ec-4a7d-803c-aee171c4c8b1" />
 
->Pada bagian Footer, struktur dibuat menggunakan elemen <footer> yang diletakkan di bagian paling bawah halaman. Class seperti text-center digunakan untuk membuat teks berada di tengah, sedangkan py-4 memberikan jarak atas dan bawah agar tidak terlalu rapat dengan konten di atasnya.
->
->Isi footer berupa informasi copyright yang menampilkan tahun pembuatan dan nama pemilik website. Walaupun sederhana, bagian ini berfungsi sebagai penutup halaman sekaligus memberikan identitas terhadap website tersebut.
->
->Styling warna dan background diatur melalui class custom seperti footer-soft pada file CSS agar tampilannya konsisten dengan tema keseluruhan website.
+Pada bagian Footer, struktur dibuat menggunakan elemen <footer> yang diletakkan di bagian paling bawah halaman. Class seperti text-center digunakan untuk membuat teks berada di tengah, sedangkan py-4 memberikan jarak atas dan bawah agar tidak terlalu rapat dengan konten di atasnya.
+
+Isi footer berupa informasi copyright yang menampilkan tahun pembuatan dan nama pemilik website. Walaupun sederhana, bagian ini berfungsi sebagai penutup halaman sekaligus memberikan identitas terhadap website tersebut.
+
+Styling warna dan background diatur melalui class custom seperti footer-soft pada file CSS agar tampilannya konsisten dengan tema keseluruhan website.
 
 ## Code Vue JS (Data, Methods, dan Lifecycle)
 
@@ -194,15 +194,15 @@
 
 <img width="1195" height="394" alt="image" src="https://github.com/user-attachments/assets/c65c4670-0823-4e04-a3c5-acf6486e7b1e" />
 
->Pada bagian <script>, saya menggunakan Vue JS untuk mengatur data dan logika yang digunakan pada website. Instance Vue dibuat menggunakan createApp() lalu di-mount ke elemen dengan id #app.
->
->Di dalam fungsi data(), saya menyimpan beberapa data utama seperti nama, deskripsi, daftar skills, daftar certificates, serta experiences. Data ini disimpan dalam bentuk array dan object agar lebih terstruktur. Dengan cara ini, tampilan pada HTML bisa mengambil data langsung dari Vue menggunakan data binding dan perulangan v-for.
->
->Bagian methods digunakan untuk menangani interaksi pengguna. Salah satunya adalah method openLightbox(image) yang berfungsi untuk menyimpan gambar yang diklik ke dalam variabel lightboxImage. Method ini digunakan pada section Certificates agar ketika card sertifikat ditekan, gambar bisa ditampilkan dalam tampilan yang lebih besar.
->
->Pada bagian mounted(), saya menjalankan beberapa kode yang dieksekusi setelah komponen selesai dirender. Di sini saya menginisialisasi library AOS untuk mengaktifkan animasi saat halaman discroll. Selain itu, saya menggunakan setTimeout() untuk mengatur lebar progress bar pada section Skills agar muncul dengan efek animasi setelah halaman dimuat.
->
->Secara keseluruhan, bagian Vue ini berfungsi sebagai penghubung antara data dan tampilan. Dengan menggunakan Vue JS, struktur data menjadi lebih rapi, tampilan menjadi dinamis, dan interaksi seperti animasi serta lightbox dapat berjalan dengan lebih terorganisir.
+Pada bagian <script>, saya menggunakan Vue JS untuk mengatur data dan logika yang digunakan pada website. Instance Vue dibuat menggunakan createApp() lalu di-mount ke elemen dengan id #app.
+
+Di dalam fungsi data(), saya menyimpan beberapa data utama seperti nama, deskripsi, daftar skills, daftar certificates, serta experiences. Data ini disimpan dalam bentuk array dan object agar lebih terstruktur. Dengan cara ini, tampilan pada HTML bisa mengambil data langsung dari Vue menggunakan data binding dan perulangan v-for.
+
+Bagian methods digunakan untuk menangani interaksi pengguna. Salah satunya adalah method openLightbox(image) yang berfungsi untuk menyimpan gambar yang diklik ke dalam variabel lightboxImage. Method ini digunakan pada section Certificates agar ketika card sertifikat ditekan, gambar bisa ditampilkan dalam tampilan yang lebih besar.
+
+Pada bagian mounted(), saya menjalankan beberapa kode yang dieksekusi setelah komponen selesai dirender. Di sini saya menginisialisasi library AOS untuk mengaktifkan animasi saat halaman discroll. Selain itu, saya menggunakan setTimeout() untuk mengatur lebar progress bar pada section Skills agar muncul dengan efek animasi setelah halaman dimuat.
+
+Secara keseluruhan, bagian Vue ini berfungsi sebagai penghubung antara data dan tampilan. Dengan menggunakan Vue JS, struktur data menjadi lebih rapi, tampilan menjadi dinamis, dan interaksi seperti animasi serta lightbox dapat berjalan dengan lebih terorganisir.
 
 ---
 
